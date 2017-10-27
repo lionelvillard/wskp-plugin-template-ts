@@ -1,0 +1,21 @@
+{
+  "name": "wskp-pluginname-plugin",
+  "version": "0.1.0",
+  "description": "Plugin for wskp",
+  "main": "dist/package.js",
+  "types": "index.ts",
+  "scripts": {
+    "pretest": "tsc",
+    "test": "mocha dist/test",
+    "compile": "tsc -watch -p ./",
+    "tsc": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.28",
+    "typescript": "^2.5.2",
+    "mocha": "^4.0.1",
+    "mocha-typescript": "^1.1.8",
+    "openwhisk-deploy": "^0.7.4"
+  },
+  "wskp": {}
+}
